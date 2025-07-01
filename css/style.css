@@ -1,0 +1,167 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* Tipografía y fondo general */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Navbar */
+.navbar-nav .nav-link {
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* Hero */
+.hero {
+    position: relative;
+    height: 100vh;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+}
+
+.hero .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+}
+
+.hero .content {
+    position: relative;
+    z-index: 2;
+}
+
+/* Botones */
+.btn {
+    border-radius: 50px;
+    padding: 10px 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.btn-light {
+    background: #fff;
+    color: #000;
+}
+
+.btn-light:hover {
+    background: #ddd;
+}
+
+.btn-dark {
+    background: #000;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.btn-dark:hover {
+    background: #111;
+    color: #fff;
+}
+
+/* Secciones */
+section {
+    padding: 60px 0;
+}
+
+/* Tracklist */
+.tracklist {
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(3px);
+}
+
+.tracklist p {
+    border-bottom: 1px dotted #888;
+    padding: 10px 0;
+    font-size: 1.1rem;
+}
+
+/* Merch imágenes */
+img.img-fluid {
+    border-radius: 8px;
+    max-height: 350px;
+    object-fit: cover;
+}
+
+/* Footer */
+footer img {
+    margin: 0 5px;
+    filter: invert(1);
+}
+
+/* Updates form */
+form input[type="email"] {
+    border-radius: 50px;
+    padding: 8px 15px;
+    border: none;
+}
+
+form button {
+    border-radius: 50px;
+    padding: 8px 20px;
+    font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3rem;
+    }
+}
+
+/* Merch section specific tweaks */
+section.bg-white {
+    background-color: #fff !important;
+}
+
+.btn-dark {
+    background-color: #000;
+    border: none;
+    font-weight: 500;
+    text-transform: none;
+}
+
+.btn-dark i {
+    margin-right: 8px;
+}
+
+.updates {
+    position: relative;
+    color: #fff;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.8);
+}
+
+.updates::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.4); /* oscurecer ligeramente */
+    z-index: 0;
+}
+
+.updates > * {
+    position: relative;
+    z-index: 1;
+}
+
+.navbar .nav-link,
+.navbar .navbar-brand {
+    color: white !important;
+}
